@@ -102,18 +102,18 @@
                 </div>
             <div class="col-md-6">
                 <label for="inputCategoría" class="form-label">Categoría</label>
-                <select id="categoría" class="form-select">
+                <select   class="form-select" onclick="descuento()" id="categoria">
                 <option selected>Estudiante</option>
-                <option>Trainee</option>
-                <option>Junior</option>
+                <option >Trainee</option>
+                <option >Junior</option>
                 </select>
             </div>
             <div class="alert alert-primary" role="alert" style="margin-top: 2%;">
-                Total a pagar: $ .valorApagar()
+                Total a pagar: $ 
             </div>
             <div class="row g-1">
-                <button type="button" onclick="borar()" class="btn col-md text-white" style="background-color: rgb(134, 209, 22);">Borrar</button>
-                <button type="button" onclick="captura()" class="btn col-md text-white" style="background-color: rgb(134, 209, 22); margin-left: 1%;">Resumen</button>
+                <button type="button"  class="btn col-md text-white" style="background-color: rgb(134, 209, 22);">Borrar</button>
+                <button type="button" onclick="valorApagar()"  class="btn col-md text-white" style="background-color: rgb(134, 209, 22); margin-left: 1%;">Resumen</button>
 
 
             </div>

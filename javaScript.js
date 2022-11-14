@@ -1,23 +1,12 @@
 
-
-function captura(){
-    var nombre= document.getElementById("nombre").value;
-    var apellido = document.getElementById("apellido").value;
-    var direcEmail = document.getElementById("email").value;
-    var cant = document.getElementById("cantidad").value;
-    
-    
-}
-
 function valorApagar(){
     const PrecioEntrada = 200;
-    var pagar = PrecioEntrada * cant ;
-    var descuento = pagar * 
-}
-
-function borrar(){
-    document.getElementById("nombre").value= " ";
-    document.getElementById("apellido").value = " ";
-    document.getElementById("email").value = " ";
-    document.getElementById("cantidad").value = " ";
-}
+    var pagar = PrecioEntrada * document.getElementById("cantidad").value; 
+    if (document.getElementById("categoria").value == "Estudiante" ){
+        pagar =  pagar - (pagar * 0.8) ;
+    } else if (document.getElementById("categoria").value == "Trainee"){
+        pagar = pagar - (pagar * 0.5);
+    } else if (document.getElementById("categoria").value == "Junior"){
+        pagar = pagar - (pagar * 0.15);}
+    alert("El total a pagar es :" + pagar);
+} 
