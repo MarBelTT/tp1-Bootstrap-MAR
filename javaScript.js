@@ -1,5 +1,5 @@
 
-function valorApagar(){
+function valorApagar(){    
     const PrecioEntrada = 200;
     var pagar = PrecioEntrada * document.getElementById("cantidad").value; 
     if (document.getElementById("categoria").value == "Estudiante" ){
@@ -8,5 +8,7 @@ function valorApagar(){
         pagar = pagar - (pagar * 0.5);
     } else if (document.getElementById("categoria").value == "Junior"){
         pagar = pagar - (pagar * 0.15);}
-    alert("El total a pagar es :" + pagar);
+   // alert("El total a pagar es :" + pagar);
+    const total =  document.getElementById("total");
+    total.textContent = pagar;
 } 
